@@ -9,12 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@zerodev/passkey-validator": "^5.4.2",
-    "@zerodev/sdk": "^5.3.26",
+    "@react-three/drei": "^9.115.0",
+    "@react-three/fiber": "^9.0.0-alpha.8",
+    "@types/three": "^0.169.0",
+    "@zerodev/ecdsa-validator": "^5.4.0-beta.0",
+    "@zerodev/passkey-validator": "^5.5.0-beta.0",
+    "@zerodev/sdk": "^5.4.0-beta.0",
+    "@zerodev/webauthn-key": "^5.4.0-beta.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.11",
     "next": "15.0.2",
+    "permissionless": "^0.2.15",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "viem": "^2.21.40"
+    "three": "^0.170.0",
+    "viem": "^2.21.43"
   },
   "devDependencies": {
     "@types/node": "^20",

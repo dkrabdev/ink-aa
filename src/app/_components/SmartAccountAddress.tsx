@@ -6,8 +6,8 @@ export const SmartAccountAddress = () => {
   const { accountAddress } = useZerodevContext();
 
   return (
-    <div className="text-center mb-4">
-      <b>Account address:</b>{' '}
+    <div className="flex flex-col text-center mb-4">
+      <span className="font-bold">Account Address</span>
       {accountAddress ? (
         <a
           href={`https://jiffyscan.xyz/account/${accountAddress}`}

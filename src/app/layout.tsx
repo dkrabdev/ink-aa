@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import { ZerodevContextProvider } from '@/context/ZerodevContext';
+import { AuroraHero } from '@/components/AuroraHero';
+import { NaigationTabs } from '@/components/NavigationTabs';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -29,7 +31,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ZerodevContextProvider>{children}</ZerodevContextProvider>
+        <div className="flex h-screen">
+          <div className="w-2/5 h-full">
+            <NaigationTabs />
+            <ZerodevContextProvider>{children}</ZerodevContextProvider>
+          </div>
+          <div className="h-full w-3/5">
+            <AuroraHero />
+          </div>
+        </div>
       </body>
     </html>
   );
