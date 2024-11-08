@@ -24,9 +24,7 @@ export const AuroraHero = () => {
     });
   }, []);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #7538F5 40%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #160F1F 50%, ${color})`;
 
   return (
     <motion.section
@@ -39,10 +37,10 @@ export const AuroraHero = () => {
         <span className="mb-1.5 inline-block rounded-full bg-white text-inkPurple px-3 py-1.5 text-sm w-48 text-center">
           Now Available on Ink!
         </span>
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight">
+        <h1 className="max-w-3xl bg-gradient-to-br from-eventPurple to-inkPurple bg-clip-text text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight">
           Unlock the Future of Wallets with Account Abstraction
         </h1>
-        <p className="bg-inkPurple/70 text-white p-6 rounded-xl my-6 max-w-2xl text-base leading-relaxed md:text-lg md:leading-relaxed shadow-sm shadow-white">
+        <p className="bg-eventPurple/80 text-darkPurple p-6 rounded-xl my-6 max-w-2xl text-base leading-relaxed md:text-lg md:leading-relaxed">
           Experience a new level of freedom and flexibility with Account
           Abstraction, now natively supported by EIP-7702. Say goodbye to
           traditional limitations as EIP-7702 enables smart contract wallets to
